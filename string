@@ -40,3 +40,25 @@ public static void main(String args[]){
 
     else{
         System.out.println("each character is not same");
+
+//finding the substring from a string plus string is immutable thus it can not be changed
+ 
+
+public class main{
+public static void main(String args[]){
+String name = "Armaan";
+String substring = sentence.substring(3);
+System.out.println(substring);
+}
+
+}
+
+
+
+
+
+
+
+
+
+

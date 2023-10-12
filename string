@@ -55,6 +55,36 @@ System.out.println(substring);
 
 
 
+//STRINGBUILDER
+
+
+
+import java.util.*;
+
+public class Main {
+    public static void main(String args[]) {
+        StringBuilder sb = new StringBuilder("Armaan");
+        System.out.println(sb);
+     sb.insert(3,'w');
+        System.out.println(sb);
+
+
+     sb.delete(3,4);
+        System.out.println(sb);
+
+        sb.append(" ");
+        sb.append("P");
+        sb.append("a");
+        sb.append("t");
+        sb.append("i");
+        sb.append("a");
+        sb.append("l");
+        System.out.println(sb);
+
+    }
+}
+
+
 
 
 

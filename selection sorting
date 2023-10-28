@@ -1,0 +1,38 @@
+import java.util.Arrays;
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+        int [] number = new int [5];
+        Random random = new Random();
+        for(int i = 0;i < number.length;i++){
+            number[i]= random.nextInt(100);
+        }
+        System.out.println(Arrays.toString(number));
+        selectionSort(number);
+        System.out.println(Arrays.toString(number));
+    }
+
+    private static void selectionSort(int[] number) {
+    int length = number.length;
+    for(int i = 0;i<length-1;i++){
+        int min = number[i];
+        int indexOfMin = i;
+        for(int j = 1+i;j<length;j++){
+            if(number[j]<min){
+                min=number[j];
+                indexOfMin=j;
+            }
+        }
+        swap(number,i,indexOfMin);
+    }
+    }
+
+    private static void swap(int[] number, int a, int b) {
+        int temp = number[a];
+        number[a]=number[b];
+        number[b]=temp;
+    }
+
+
+}
